@@ -41,12 +41,12 @@ describe('End to End Tests', () => {
             .evaluate(() => document.querySelector('button[id=calculate]'))
             .then(input => expect(input).to.exist)
     });
-    it('should contain a <input> element for the Interest Rate', () => {
+    it('should contain an <input> element for the Interest Rate', () => {
         return pageObject
             .evaluate(() => document.querySelector('input[name=interestRate]'))
             .then(input => expect(input).to.exist)
     });
-    it('should contain a <input> element for the Loan Term', () => {
+    it('should contain an <input> element for the Loan Term', () => {
         return pageObject
             .evaluate(() => document.querySelector('input[name=loanTerm]'))
             .then(input => expect(input).to.exist)
